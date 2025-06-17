@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="pt-br" itemscope itemtype="http://schema.org/EducationalProject">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title itemprop="name">Agrinho 2025: Campo e Cidade - A Essência da Interdependência</title>
+    <meta name="description" itemprop="description" content="Um projeto educacional do Agrinho 2025 explorando a vital interdependência entre o campo e a cidade, e como um não vive sem o outro para o desenvolvimento sustentável.">
+    <meta name="keywords" content="Agrinho 2025, Campo e Cidade, interdependência, agricultura, urbanização, sustentabilidade, educação, Paraná">
+    <meta name="author" itemprop="author" content="[Seu Nome Completo]">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Importação das fontes - Redundante se já estiver em link, mas mantido caso preferência seja `@import` */
+        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap'); */
+
+        /* Variáveis CSS para cores e tamanhos */
+        :root {
+            --color-primary: #27ae60; /* Verde Agrinho */
+            --color-secondary: #3498db; /* Azul vibrante */
+            --color-dark: #2c3e50; /* Azul escuro */
+            --color-light-gray: #ecf0f1;
+            --color-text: #333;
+            --color-bg-light: #fefefe;
+            --color-bg-dark: #f0f4f7;
+
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+
+            --padding-section: 60px 40px;
+            --max-width-content: 1100px;
+        }
+
+        /* Reset básico e estilos gerais */
+        body {
+            font-family: var(--font-body);
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-bg-dark);
+            color: var(--color-text);
+            line-height: 1.7;
+            scroll-behavior: smooth; /* Rolagem suave para âncoras */
+        }
+
+        a {
+            color: var(--color-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--color-primary);
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-dark);
+            margin-top: 0;
+            line-height: 1.2; /* Melhorar legibilidade de títulos */
+        }
+
+        h1 { font-size: 3.5em; }
+        h2 { font-size: 2.8em; }
+        h3 { font-size: 1.8em; }
+
+        .icon-large {
+            font-size: 1.2em;
+            margin-right: 10px;
+            color: var(--color-primary);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--color-dark);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            position: sticky; /* Sticky header */
+            top: 0;
+            z-index: 1000; /* Garante que fique acima de outros elementos */
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+            font-size: 3.2em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            color: white; /* Cor do título no header */
+        }
+
+        header p {
+            font-size: 1.3em;
+            margin-top: 0;
+            opacity: 0.9;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            font-weight: 600;
+            font-size: 1.1em;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        header nav ul li a i {
+            margin-right: 8px;
+        }
+
+        /* Main Content */
+        main {
+            max-width: var(--max-width-content);
+            margin: 40px auto;
+            background-color: var(--color-bg-light);
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        section {
+            padding: var(--padding-section);
+            margin-bottom: 30px;
+            background-color: var(--color-bg-light);
+            border-bottom: 1px solid var(--color-light-gray);
+            position: relative;
+            overflow: hidden; /* Para garantir animações de fundo */
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--color-dark);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        section h2::after { /* Linha decorativa abaixo do título da seção */
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background-color: var(--color-primary);
+            border-radius: 3px;
+        }
+
+        /* Hero Section (Introdução) */
+        .hero-section {
+            background: linear-gradient(to right, #e0ffe0, #e0f2f7); /* Gradiente suave */
+            text-align: center;
+            padding: 80px 40px;
+            border-radius: 12px 12px 0 0;
+            position: relative;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-section p {
+            font-size: 1.25em;
+            max-width: 800px;
+            margin: 20px auto 30px auto;
+            line-height: 1.8;
+        }
+
+        .video-container {
+            position: relative;
+            width: 80%;
+            max-width: 700px;
+            margin: 30px auto;
+            padding-bottom: 40%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-container figcaption {
+            margin-top: 15px;
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        .call-to-action {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--color-secondary);
+            margin-top: 40px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Sidebar Info (Aside) */
+        .sidebar-info {
+            background-color: var(--color-bg-light);
+            border-left: 5px solid var(--color-primary);
+            padding: 30px;
+            margin: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .sidebar-info h3 {
+            color: var(--color-dark);
+            margin-bottom: 20px;
+            border-bottom: 2px dashed var(--color-light-gray);
+            padding-bottom: 10px;
+        }
+
+        .sidebar-info details {
+            margin-bottom: 15px;
+            border: 1px solid var(--color-light-gray);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .sidebar-info summary {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar-info summary:hover {
+            background-color: #2980b9; /* Tom mais escuro de azul */
+        }
+
+        .sidebar-info details p,
+        .sidebar-info details ul {
+            padding: 15px 20px;
+            margin: 0;
+            background-color: var(--color-bg-light);
+        }
+
+        .sidebar-info details ul li {
+            margin-bottom: 5px;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        /* Ambientes (Campo e Cidade) */
+        .ambiente {
+            padding: var(--padding-section);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .campo-bg {
+            background: linear-gradient(135deg, #f0fff0, #e0f2e0); /* Verde mais suave */
+            border-left: 8px solid var(--color-primary);
+        }
+
+        .cidade-bg {
+            background: linear-gradient(135deg, #f8f8ff, #e8f0f8); /* Azul mais suave */
+            border-right: 8px solid var(--color-secondary);
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%; /* Garante que os cards tenham a mesma altura */
+        }
+
+        .item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .item img {
+            max-width: 100%;
+            height: 200px; /* Altura fixa para imagens */
+            object-fit: cover; /* Recorta a imagem para preencher */
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .item figcaption {
+            font-family: var(--font-heading);
+            font-size: 1.5em;
+            color: var(--color-dark);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .item p {
+            font-size: 1.05em;
+            text-align: justify;
+            flex-grow: 1; /* Permite que o parágrafo ocupe o espaço restante */
+        }
+
+        .list-detail {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .list-detail li {
+            background-color: var(--color-light-gray);
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 6px;
+            font-size: 0.95em;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-left: 3px solid var(--color-primary); /* Borda decorativa */
+        }
+
+        .list-detail li i {
+            color: var(--color-primary);
+            font-size: 1.1em;
+        }
+
+        .cidade-bg .list-detail li {
+            border-left: 3px solid var(--color-secondary);
+        }
+
+        .cidade-bg .list-detail li i {
+            color: var(--color-secondary);
+        }
+
+        .info-extra {
+            text-align: center;
+            font-style: italic;
+            margin-top: 40px;
+            font-size: 1.15em;
+            color: #666;
+            background-color: rgba(var(--color-secondary), 0.05); /* Um toque de cor */
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px dashed rgba(52, 152, 219, 0.2);
+        }
+
+        /* Audio Player */
+        .audio-player {
+            width: 80%;
+            max-width: 400px;
+            margin: 30px auto 10px auto;
+            display: block; /* Garante que o player fique centralizado */
+        }
+        .audio-player + figcaption { /* Legenda do áudio */
+            text-align: center;
+            font-style: italic;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        /* Divisor Visual */
+        .divisor-visual {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(to right, var(--color-light-gray), #e0f2f7, var(--color-light-gray));
+            margin: 30px auto; /* Para centralizar o divisor */
+            width: 90%;
+            border-radius: 10px;
+            border: 2px dashed var(--color-dark);
+            font-size: 1.4em;
+            color: var(--color-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .icon-connector {
+            font-size: 2.5em;
+            color: var(--color-primary);
+        }
+        .icon-connector:last-child {
+            color: var(--color-secondary); /* Cor diferente para o segundo ícone */
+        }
+
+        /* Conexões Vitais (Diagrama) */
+        .connecting-section {
+            background-color: var(--color-bg-dark); /* Fundo sutil */
+            border-top: 5px solid var(--color-primary);
+            border-bottom: 5px solid var(--color-secondary);
+        }
+
+        .conexoes-diagrama {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .flow-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+            flex: 1;
+            min-width: 380px; /* Largura mínima para cards de fluxo */
+            max-width: 48%;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .flow-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .flow-card h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid var(--color-light-gray);
+            padding-bottom: 10px;
+            color: var(--color-dark);
+        }
+
+        .campo-para-cidade h3 i {
+            color: var(--color-primary);
+        }
+
+        .cidade-para-campo h3 i {
+            color: var(--color-secondary);
+        }
+
+        .transferencia-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .transferencia-list li {
+            font-size: 1.1em;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background-color: var(--color-bg-dark);
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        .transferencia-list li:hover {
+            background-color: var(--color-light-gray);
+        }
+
+        .transferencia-list li i {
+            color: var(--color-primary); /* Ícones do campo */
+            font-size: 1.2em;
+        }
+
+        .cidade-para-campo .transferencia-list li i {
+            color: var(--color-secondary); /* Ícones da cidade */
+        }
+
+        /* Galeria de Imagens */
+        .gallery-section {
+            text-align: center;
+            background-color: #f7fcfb;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .image-gallery a {
+            display: block;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-gallery a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 220px; /* Altura fixa para as miniaturas */
+            object-fit: cover;
+            display: block;
+            transition: filter 0.3s ease;
+        }
+
+        .image-gallery a:hover img {
+            filter: brightness(0.8); /* Escurece um pouco ao passar o mouse */
+        }
+
+        .gallery-info {
+            font-size: 1.1em;
+            margin-top: 40px;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Desafios e Soluções */
+        .challenges-section {
+            background-color: var(--color-bg-dark);
+            border-top: 1px dashed var(--color-light-gray);
+            border-bottom: 1px dashed var(--color-light-gray);
+        }
+
+        .challenges-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .challenge-card {
+            flex: 1;
+            min-width: 300px;
+            max-width: 48%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .challenge-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .challenge-card summary {
+            background-color: var(--color-dark);
+            color: white;
+            padding: 20px 25px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background-color 0.3s ease;
+        }
+
+        .challenge-card summary:hover {
+            background-color: #34495e; /* Tom mais escuro */
+        }
+
+        .challenge-card summary i {
+            transition: transform 0.3s ease;
+        }
+
+        .challenge-card[open] summary i {
+            transform: rotate(180deg); /* Gira a seta quando aberto */
+        }
+
+        .challenge-card .details-content {
+            padding: 20px 25px;
+            background-color: var(--color-bg-light);
+        }
+
+        .challenge-card h4 {
+            color: var(--color-primary);
+            font-size: 1.3em;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .challenge-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .challenge-card ul li {
+            font-size: 1em;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            color: #555;
+        }
+
+        .challenge-card ul li i {
+            color: var(--color-secondary); /* Ícones de solução */
+            margin-top: 4px;
+        }
+
+        .final-message {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.4em;
+            margin-top: 50px;
+            padding: 25px;
+            background-color: #d1f3d1;
+            border-radius: 10px;
+            color: #228b22;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #a8e6a8;
+        }
+
+        /* Formulário de Contato */
+        .contact-section {
+            background-color: #eaf6fa;
+            border-top: 5px solid var(--color-secondary);
+        }
+
+        .contact-section p {
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--color-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group select,
+        .form-group textarea {
+            width: calc(100% - 24px); /* Ajusta para padding e border */
+            padding: 12px;
+            border: 1px solid var(--color-light-gray);
+            border-radius: 6px;
+            font-size: 1em;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--color-secondary);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+            outline: none;
+        }
+
+        .form-group textarea {
+            resize: vertical; /* Permite redimensionar verticalmente */
+            min-height: 100px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--color-primary); /* Cor do checkbox */
+        }
+
+        .btn-submit {
+            background-color: var(--color-primary);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Centraliza o texto do botão */
+            justify-content: center; /* Centraliza o conteúdo (ícone + texto) */
+            width: fit-content; /* Ajusta a largura ao conteúdo */
+            margin-left: auto; /* Centraliza o botão dentro do form */
+            margin-right: auto; /* Centraliza o botão dentro do form */
+        }
+
+        .btn-submit:hover {
+            background-color: #2ecc71; /* Tom mais claro de verde */
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 40px;
+            font-size: 0.95em;
+            border-radius: 0 0 12px 12px; /* Cantos arredondados na parte inferior */
+        }
+
+        footer address {
+            font-style: normal;
+            margin-bottom: 15px;
+        }
+
+        footer address a {
+            color: var(--color-secondary);
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.8em;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--color-primary);
+            transform: scale(1.1);
+        }
+
+        /* Modal/Dialog */
+        dialog {
+            border: none;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            max-width: 500px;
+            background-color: white;
+            text-align: center;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+
+        dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+        }
+
+        dialog[open] {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        dialog[open]::backdrop {
+            opacity: 1;
+        }
+
+        dialog h3 {
+            font-size: 1.8em;
+            color: var(--color-dark);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        dialog p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        dialog button {
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0 auto;
+        }
+
+        dialog button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        /* Botão para abrir o modal */
+        .btn-modal-open {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--color-secondary);
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 50px; /* Botão flutuante arredondado */
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 999;
+        }
+
+        .btn-modal-open:hover {
+            background-color: var(--color-primary);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Animações CSS */
+        .animated-button {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s; /* Pequeno atraso para aparecer depois do hero */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsividade */
+        @media (max-width: 992px) {
+            h1 { font-size: 2.8em; }
+            h2 { font-size: 2.2em; }
+            h3 { font-size: 1.6em; }
+
+            header nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header nav ul li {
+                margin: 0;
+            }
+
+            header nav ul li a {
+                font-size: 1em;
+                padding: 6px 10px;
+            }
+
+            main {
+                margin: 20px auto;
+                border-radius: 0; /* Remove cantos arredondados em telas menores */
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            .hero-section {
+                padding: 60px 20px;
+            }
+
+            .hero-section p {
+                font-size: 1.1em;
+            }
+
+            .video-container {
+                width: 95%;
+                padding-bottom: 56.25%; /* Padrão 16:9 */
+            }
+
+            .sidebar-info {
+                margin: 20px 20px;
+            }
+
+            .grid-layout,
+            .conexoes-diagrama,
+            .challenges-grid,
+            .image-gallery {
+                grid-template-columns: 1fr; /* Uma coluna em telas médias/pequenas */
+            }
+
+            .flow-card,
+            .challenge-card {
+                max-width: 100%;
+                min-width: unset;
+            }
+
+            .contact-form {
+                max-width: 95%;
+                padding: 25px;
+            }
+
+            .btn-modal-open {
+                bottom: 20px;
+                right: 20px;
+                font-size: 1em;
+                padding: 12px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 { font-size: 2.2em; }
+            h2 { font-size: 1.8em; }
+            h3 { font-size: 1.4em; }
+
+            header {
+                padding: 1.5rem 0;
+            }
+
+            header nav ul {
+                margin-top: 15px;
+            }
+
+            header nav ul li a {
+                font-size: 1em;
+                padding: 6px 10px;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+
+            .hero-section {
+                padding: 40px 15px;
+            }
+
+            .hero-section p {
+                font-size: 1em;
+            }
+
+            .sidebar-info {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            .item {
+                padding: 20px;
+            }
+
+            .item img {
+                height: 180px;
+            }
+
+            .divisor-visual {
+                flex-direction: column;
+                gap: 10px;
+                font-size: 1.1em;
+                padding: 20px 0;
+                margin: 20px auto;
+            }
+
+            .icon-connector {
+                font-size: 2em;
+            }
+
+            .flow-card {
+                padding: 20px;
+            }
+
+            .flow-card h3 {
+                font-size: 1.5em;
+            }
+
+            .transferencia-list li {
+                font-size: 0.95em;
+                padding: 8px 12px;
+            }
+
+            .image-gallery img {
+                height: 160px;
+            }
+
+            .challenge-card summary {
+                font-size: 1.2em;
+                padding: 15px 20px;
+            }
+
+            .challenge-card .details-content {
+                padding: 15px 20px;
+            }
+
+            .final-message {
+                font-size: 1.1em;
+                padding: 20px;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            .btn-submit {
+                font-size: 1.1em;
+                padding: 12px 20px;
+            }
+
+            dialog {
+                max-width: 90%;
+                padding: 20px;
+            }
+
+            dialog h3 {
+                font-size: 1.5em;
+            }
+
+            .btn-modal-open {
+                bottom: 15px;
+                right: 15px;
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header itemscope itemtype="http://schema.org/WPHeader">
+        <h1 itemprop="headline">Agrinho 2025: Campo e Cidade</h1>
+        <p itemprop="abstract">A Essência da Interdependência para um Futuro Sustentável</p>
+        <nav aria-label="Navegação Principal do Site">
+            <ul>
+                <li><a href="#introducao"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#campo-pilar"><i class="fas fa-seedling"></i> O Campo</a></li>
+                <li><a href="#cidade-impulso"><i class="fas fa-building"></i> A Cidade</a></li>
+                <li><a href="#conexoes-vital"><i class="fas fa-link"></i> Conexões</a></li>
+                <li><a href="#desafios-solucoes"><i class="fas fa-lightbulb"></i> Desafios</a></li>
+                <li><a href="#galeria"><i class="fas fa-images"></i> Galeria</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main itemprop="mainContentOfPage">
+        <section id="introducao" class="hero-section" itemscope itemtype="http://schema.org/Article">
+            <h2 itemprop="name">Introdução: Duas Realidades, Um Destino</h2>
+            <p itemprop="articleBody">O campo e a cidade, embora distintos em sua essência e ritmo, são como os dois lados de uma mesma moeda. Uma relação simbiótica e inseparável que impulsiona o desenvolvimento de nossa sociedade. Este projeto do Agrinho 2025 busca explorar a fundo essa interdependência vital, mostrando como o bem-estar de um é fundamental para a prosperidade do outro. Vamos juntos descobrir a magia e a importância dessa conexão!</p>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" title="Vídeo sobre Campo e Cidade" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <figcaption>Assista ao nosso vídeo introdutório sobre a relação Campo-Cidade.</figcaption>
+            </div>
+            <p class="call-to-action">Descubra como o campo alimenta a cidade e a cidade inova o campo!</p>
+        </section>
+
+        <aside class="sidebar-info" aria-labelledby="sidebar-title">
+            <h3 id="sidebar-title"><i class="fas fa-info-circle"></i> Fique por Dentro!</h3>
+            <details>
+                <summary><i class="fas fa-calendar-alt"></i> Datas Importantes Agrinho 2025</summary>
+                <p>Mantenha-se atualizado com o cronograma do Agrinho 2025 para não perder nenhuma atividade!</p>
+                <ul>
+                    <li><strong>Início do Projeto:</strong> Março de 2025</li>
+                    <li><strong>Semana de Conscientização:</strong> Junho de 2025</li>
+                    <li><strong>Feira de Projetos:</strong> Outubro de 2025</li>
+                    <li><strong>Evento Final:</strong> Dezembro de 2025</li>
+                </ul>
+            </details>
+            <details>
+                <summary><i class="fas fa-users"></i> Quem faz o Agrinho?</summary>
+                <p>O Agrinho é uma iniciativa do <strong>SENAR-PR (Serviço Nacional de Aprendizagem Rural – Administração Regional do Paraná)</strong>, em parceria com a Faep, o governo do estado e diversas outras entidades.</p>
+            </details>
+        </aside>
+
+        <section id="campo-pilar" class="ambiente campo-bg" itemscope itemtype="http://schema.org/AboutPage">
+            <h2>O Campo: O Pilar da Vida</h2>
+            <p>O campo é o coração pulsante da nossa nação, a origem de tudo o que consumimos. É lá que a natureza e o trabalho árduo se encontram para gerar a base de nossa existência.</p>
+
+            <div class="grid-layout">
+                <article class="item" itemscope itemtype="http://schema.org/Article">
+                    <img src="images/agricultura_familiar.jpg" alt="Agricultura Familiar" itemprop="image">
+                    <figcaption itemprop="headline">Agricultura Familiar</figcaption>
+                    <p itemprop="articleBody">A agricultura familiar é a espinha dorsal da produção de alimentos no Brasil, responsável por grande parte do que chega à nossa mesa. Pequenos produtores cultivam com dedicação e sustentabilidade.</p>
+                    <ul class="list-detail">
+                        <li><i class="fas fa-leaf"></i> Produção de alimentos saudáveis</li>
+                        <li><i class="fas fa-hand-holding-heart"></i> Fortalecimento da economia local</li>
+                        <li><i class="fas fa-users-cog"></i> Geração de empregos no meio rural</li>
+                    </ul>
+                </article>
+
+                <article class="item" itemscope itemtype="http://schema.org/Article">
+                    <img src="images/recursos_naturais.jpg" alt="Recursos Naturais no Campo" itemprop="image">
+                    <figcaption itemprop="headline">Recursos Naturais</figcaption>
+                    <p itemprop="articleBody">O campo é guardião de vasta biodiversidade e recursos naturais essenciais, como água potável, solos férteis e florestas, que são vitais para o equilíbrio do planeta.</p>
+                    <ul class="list-detail">
+                        <li><i class="fas fa-water"></i> Abastecimento de água para cidades</li>
+                        <li><i class="fas fa-tree"></i> Preservação de florestas e fauna</li>
+                        <li><i class="fas fa-cloud-sun"></i> Regulação climática</li>
+                    </ul>
+                </article>
+
+                <article class="item" itemscope itemtype="http://schema.org/Article">
+                    <img src="images/tecnologia_campo.jpg" alt="Tecnologia no Campo" itemprop="image">
+                    <figcaption itemprop="headline">Inovação e Tecnologia</figcaption>
+                    <p itemprop="articleBody">A tecnologia tem transformado o campo, otimizando a produção, garantindo maior eficiência e sustentabilidade. Da agricultura de precisão à biotecnologia, o futuro é agora.</p>
+                    <ul class="list-detail">
+                        <li><i class="fas fa-tractor"></i> Máquinas modernas</li>
+                        <li><i class="fas fa-seedling"></i> Sementes melhoradas</li>
+                        <li><i class="fas fa-chart-line"></i> Monitoramento e gestão inteligente</li>
+                    </ul>
+                </article>
+            </div>
+            <p class="info-extra">"O campo não é apenas um lugar de trabalho, é um santuário de vida e o início de cada refeição."</p>
+        </section>
+
+        <div class="divisor-visual">
+            <i class="fas fa-seedling icon-connector"></i>
+            <span>Campo & Cidade</span>
+            <i class="fas fa-building icon-connector"></i>
+        </div>
+
+        <section id="cidade-impulso" class="ambiente cidade-bg" itemscope itemtype="http://schema.org/AboutPage">
+            <h2>A Cidade: O Impulso da Sociedade</h2>
+            <p>A cidade é o centro da inovação, do comércio e da cultura. É onde as ideias florescem, as pessoas se conectam e a demanda por produtos e serviços do campo é transformada em progresso.</p>
+
+            <div class="grid-layout">
+                <article class="item" itemscope itemtype="http://schema.org/Article">
+                    <img src="images/mercado_consumo.jpg" alt="Mercado de Consumo Urbano" itemprop="image">
+                    <figcaption itemprop="headline">Mercado Consumidor</figcaption>
+                    <p itemprop="articleBody">Com sua grande população, a cidade é o principal mercado consumidor para os produtos do campo, desde alimentos frescos até matérias-primas para a indústria.</p>
+                    <ul class="list-detail">
+                        <li><i class="fas fa-shopping-basket"></i> Demanda por alimentos</li>
+                        <li><i class="fas fa-utensils"></i> Variedade de restaurantes e culinárias</li>
+                        <li><i class="fas fa-industry"></i> Matéria-prima para indústrias</li>
+                    </ul>
+                </article>
+
+                <article class="item" itemscope itemtype="http://schema.org/Article">
+                    <img src="images/inovacao_urbana.jpg" alt="Centros de Inovação Urbana" itemprop="image">
+                    <figcaption itemprop="headline">Tecnologia e Inovação</figcaption>
+                    <p itemprop="articleBody">As cidades são berços de inovação e tecnologia que retroalimentam o campo, desenvolvendo maquinários, pesquisas agrícolas, sistemas de logística e muito mais.</p>
+                    <ul class="list-detail">
+                        <li><i class="fas fa-robot"></i> Robótica e automação</li>
+                        <li><i class="fas fa-flask"></i> Pesquisa e desenvolvimento agrícola</li>
+                        <li><i class="fas fa-globe"></i> Conectividade e internet</li>
+                    </ul>
+                </article>
+
+                <article class="item" itemscope itemtype="http://schema.org/Article">
+                    <img src="images/infraestrutura_cidade.jpg" alt="Infraestrutura Urbana" itemprop="image">
+                    <figcaption itemprop="headline">Infraestrutura e Serviços</figcaption>
+                    <p itemprop="articleBody">A infraestrutura urbana, como estradas, portos e sistemas de transporte, é crucial para que os produtos do campo cheguem aos consumidores e para que o conhecimento flua.</p>
+                    <ul class="list-detail">
+                        <li><i class="fas fa-road"></i> Vias de transporte e logística</li>
+                        <li><i class="fas fa-hospital"></i> Serviços de saúde e educação</li>
+                        <li><i class="fas fa-university"></i> Centros de pesquisa e universidades</li>
+                    </ul>
+                </article>
+            </div>
+            <p class="info-extra">"A cidade é o ponto de encontro, a vitrine e o motor que impulsionam o campo para o futuro."</p>
+        </section>
+
+        <section id="conexoes-vital" class="connecting-section">
+            <h2>Conexões Vitais: Um Fluxo Contínuo</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px;">A interdependência entre campo e cidade é um ciclo contínuo de trocas, onde cada um fornece o que o outro precisa para prosperar.</p>
+
+            <div class="conexoes-diagrama">
+                <div class="flow-card campo-para-cidade">
+                    <h3><i class="fas fa-arrow-right"></i> Do Campo para a Cidade</h3>
+                    <ul class="transferencia-list">
+                        <li><i class="fas fa-wheat-alt"></i> **Alimentos:** Grãos, frutas, verduras, carnes e laticínios.</li>
+                        <li><i class="fas fa-leaf"></i> **Matérias-primas:** Algodão, madeira, couro para a indústria.</li>
+                        <li><i class="fas fa-water"></i> **Água e Energia:** Abastecimento hídrico e fontes de energia renováveis.</li>
+                        <li><i class="fas fa-spa"></i> **Beleza Natural:** Áreas de lazer, turismo rural e qualidade do ar.</li>
+                        <li><i class="fas fa-cloud-sun"></i> **Equilíbrio Ambiental:** Manutenção de ecossistemas e clima.</li>
+                    </ul>
+                </div>
+
+                <div class="flow-card cidade-para-campo">
+                    <h3><i class="fas fa-arrow-left"></i> Da Cidade para o Campo</h3>
+                    <ul class="transferencia-list">
+                        <li><i class="fas fa-tractor"></i> **Tecnologia:** Máquinas agrícolas, insumos e softwares.</li>
+                        <li><i class="fas fa-money-bill-wave"></i> **Capital e Investimento:** Financiamento e desenvolvimento de negócios.</li>
+                        <li><i class="fas fa-user-tie"></i> **Serviços:** Educação, saúde, consultoria técnica e pesquisa.</li>
+                        <li><i class="fas fa-lightbulb"></i> **Inovação:** Novas técnicas, sementes e métodos de produção.</li>
+                        <li><i class="fas fa-network-wired"></i> **Infraestrutura:** Vias de acesso, comunicação e energia elétrica.</li>
+                    </ul>
+                </div>
+            </div>
+            <figure>
+                <audio controls class="audio-player">
+                    <source src="audio/interdependencia_campo_cidade.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <figcaption>Ouça um trecho sobre a importância da interdependência.</figcaption>
+            </figure>
+        </section>
+        
+        <section id="galeria" class="gallery-section">
+            <h2>Galeria de Imagens: Uma Visão Integrada</h2>
+            <p>Confira imagens que ilustram a beleza e a importância do campo e da cidade em suas diversas facetas.</p>
+            <div class="image-gallery">
+                <a href="images/gallery/campo_colheita_full.jpg" target="_blank" title="Campo: Colheita Farta"><img src="images/gallery/campo_colheita_thumb.jpg" alt="Colheita no Campo"></a>
+                <a href="images/gallery/cidade_skyline_full.jpg" target="_blank" title="Cidade: Skyline Moderno"><img src="images/gallery/cidade_skyline_thumb.jpg" alt="Skyline da Cidade"></a>
+                <a href="images/gallery/feira_livre_full.jpg" target="_blank" title="Feira Livre: Conexão Direta"><img src="images/gallery/feira_livre_thumb.jpg" alt="Feira Livre"></a>
+                <a href="images/gallery/tecnologia_agricola_full.jpg" target="_blank" title="Tecnologia a Serviço do Campo"><img src="images/gallery/tecnologia_agricola_thumb.jpg" alt="Tecnologia Agrícola"></a>
+                <a href="images/gallery/sustentabilidade_urbana_full.jpg" target="_blank" title="Sustentabilidade na Cidade"><img src="images/gallery/sustentabilidade_urbana_thumb.jpg" alt="Horta Urbana"></a>
+                <a href="images/gallery/criancas_agrinho_full.jpg" target="_blank" title="Crianças no Projeto Agrinho"><img src="images/gallery/criancas_agrinho_thumb.jpg" alt="Crianças Agrinho"></a>
+            </div>
+            <p class="gallery-info">Clique nas imagens para visualizá-las em tamanho maior.</p>
+        </section>
+
+        <section id="desafios-solucoes" class="challenges-section">
+            <h2>Desafios e Soluções para um Futuro Sustentável</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 50px;">A relação campo-cidade enfrenta desafios, mas com planejamento e inovação, podemos construir um futuro mais sustentável para todos.</p>
+
+            <div class="challenges-grid">
+                <details class="challenge-card">
+                    <summary><i class="fas fa-exclamation-triangle"></i> Desafios</summary>
+                    <div class="details-content">
+                        <h4>Impactos Ambientais</h4>
+                        <ul>
+                            <li><i class="fas fa-trash-alt"></i> Descarte inadequado de resíduos urbanos no campo.</li>
+                            <li><i class="fas fa-smog"></i> Poluição do ar e da água por atividades urbanas e agrícolas.</li>
+                            <li><i class="fas fa-water"></i> Escassez hídrica devido ao consumo e uso ineficiente.</li>
+                        </ul>
+                        <h4>Desigualdades Sociais</h4>
+                        <ul>
+                            <li><i class="fas fa-frown"></i> Êxodo rural e inchaço das cidades.</li>
+                            <li><i class="fas fa-hand-holding-usd"></i> Disparidade de renda e acesso a serviços.</li>
+                            <li><i class="fas fa-school"></i> Dificuldade de acesso à educação de qualidade no campo.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="challenge-card">
+                    <summary><i class="fas fa-lightbulb"></i> Soluções</summary>
+                    <div class="details-content">
+                        <h4>Sustentabilidade e Inovação</h4>
+                        <ul>
+                            <li><i class="fas fa-recycle"></i> Incentivo à reciclagem e compostagem.</li>
+                            <li><i class="fas fa-solar-panel"></i> Uso de energias renováveis e agricultura de baixo carbono.</li>
+                            <li><i class="fas fa-water"></i> Gestão inteligente de recursos hídricos.</li>
+                        </ul>
+                        <h4>Inclusão e Desenvolvimento</h4>
+                        <ul>
+                            <li><i class="fas fa-hands-helping"></i> Políticas de incentivo ao pequeno produtor rural.</li>
+                            <li><i class="fas fa-laptop-house"></i> Expansão da conectividade e educação a distância no campo.</li>
+                            <li><i class="fas fa-city"></i> Planejamento urbano sustentável e cooperativas.</li>
+                        </ul>
+                    </div>
+                </details>
+            </div>
+            <p class="final-message">Juntos, campo e cidade podem construir um futuro mais verde, justo e próspero!</p>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h2>Entre em Contato Conosco!</h2>
+            <p>Tem alguma dúvida, sugestão ou quer saber mais sobre o projeto Agrinho 2025? Preencha o formulário abaixo!</p>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome"><i class="fas fa-user"></i> Seu Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Seu Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto"><i class="fas fa-tag"></i> Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida sobre o projeto</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="parceria">Oportunidade de parceria</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem"><i class="fas fa-comment-dots"></i> Sua Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Quero receber novidades do Agrinho 2025</label>
+                </div>
+                <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <footer itemscope itemtype="http://schema.org/WPFooter">
+        <p>&copy; 2025 Projeto Agrinho. Todos os direitos reservados.</p>
+        <address>
+            Realização: <a href="https://www.sistemafaep.org.br/senar-pr/" target="_blank" rel="noopener noreferrer" itemprop="url">SENAR-PR</a>
+        </address>
+        <div class="social-links">
+            <a href="https://facebook.com/senarpr" target="_blank" rel="noopener noreferrer" aria-label="Facebook do SENAR-PR"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/senar_pr" target="_blank" rel="noopener noreferrer" aria-label="Instagram do SENAR-PR"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/senarparana" target="_blank" rel="noopener noreferrer" aria-label="YouTube do SENAR-PR"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <button class="btn-modal-open animated-button" id="openModalBtn">
+        <i class="fas fa-question-circle"></i> Saiba Mais!
+    </button>
+
+    <dialog id="infoModal">
+        <h3><i class="fas fa-info-circle"></i> Sobre o Projeto Agrinho 2025</h3>
+        <p>Este site é um projeto educacional desenvolvido para o Programa Agrinho 2025, com o tema <strong>"Campo e Cidade: A Essência da Interdependência"</strong>. Nosso objetivo é conscientizar sobre a importância da conexão entre o meio rural e urbano para um desenvolvimento sustentável e equilibrado.</p>
+        <p>Agradecemos seu interesse em aprender mais sobre este tema vital para o Paraná e para o Brasil!</p>
+        <button id="closeModalBtn"><i class="fas fa-times-circle"></i> Fechar</button>
+    </dialog>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Script para o Modal/Dialog
+            const openModalBtn = document.getElementById('openModalBtn');
+            const closeModalBtn = document.getElementById('closeModalBtn');
+            const infoModal = document.getElementById('infoModal');
+
+            if (openModalBtn && infoModal) {
+                openModalBtn.addEventListener('click', function() {
+                    infoModal.showModal();
+                });
+            }
+
+            if (closeModalBtn && infoModal) {
+                closeModalBtn.addEventListener('click', function() {
+                    infoModal.close();
+                });
+            }
+
+            // Opcional: Fechar modal ao clicar fora dele (com exceção de iOS)
+            // if (infoModal) {
+            //     infoModal.addEventListener('click', function(event) {
+            //         if (event.target === infoModal) {
+            //             infoModal.close();
+            //         }
+            //     });
+            // }
+
+            // Adicionar funcionalidade de "ativo" para a navegação
+            const navLinks = document.querySelectorAll('header nav ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Adicionar classe 'active' ao link de navegação da seção visível
+            const sections = document.querySelectorAll('main section');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Ajuste este valor para quando a seção deve ser considerada 'ativa'
+            };
+
+            const sectionObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                            if (link.getAttribute('href') === `#${entry.target.id}`) {
+                                link.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                sectionObserver.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
